@@ -13,7 +13,15 @@ def CameraON():
     camera.preview_window=(-2,-7, 800, 800)
     camera.resolution=(640,480)
     camera.start_preview()
-    
+
+def TakePicture():
+    camera.stop_preview()
+    camera.preview_fullscreen=False
+    camera.preview_window=(-2,-7, 800, 800)
+    camera.resolution=(640,480)
+    camera.start_preview()
+
+
 def CameraOFF():
     camera.stop_preview()
     
